@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador | Challenge</title>
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+  <header>
+    <h1><img src="logo.png" alt="logo-alura">Encriptador</h1>
+  </header>
+  
+  <main>
+    <div class="contenedor">
+      <section>
+        <textarea id="entradatxt" oninput="validar(this)" cols="30" rows="18"></textarea>
+        <div class="botones">
+          <button onclick="encriptar();">Encriptar</button>
+          <button onclick="desencriptar();">Desencriptar</button>
+        </div>  
+      </section>
+
+      <section>
+          <textarea id="salidatxt" cols="30" rows="18" readonly></textarea>
+          <div class="botones">
+            <button onclick="copiarEncriptado();">Copiar</button>
+          </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://fesquidev.github.io/Encriptador/">GitHub</i></a>
+    <a href="#">Linkedin</a>
+    <p>&copy; 2024 | fesquidev</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
